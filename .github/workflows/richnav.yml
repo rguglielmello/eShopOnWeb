@@ -15,10 +15,10 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Build with dotnet Web
-      run: dotnet build ../src/Web/Web.csproj --configuration Release
+      run: dotnet build ./src/Web/Web.csproj --configuration Release
       
     - name: Build with dotnet Api
-      run: dotnet build ../src/PublicApi/PublicApi.csproj --configuration Release
+      run: dotnet build ./src/PublicApi/PublicApi.csproj --configuration Release
 
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with:
